@@ -30,6 +30,25 @@ go into your project direcotry and run
 npm i
 ```
 
+### Starting as PWA
+
+Use node v10.11.0
+
+```
+npm install
+sudo npm install -g cordova
+sudo npm install -g ionic
+ionic cordova platform add browser
+ionic cordova run browser
+```
+
+```
+navigator.bluetooth.requestDevice({
+  acceptAllDevices: true,
+  optionalServices: ['battery_service']
+})
+```
+
 ### Starting
 
 Start the app in your browser:
